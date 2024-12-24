@@ -4,10 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
     <title>Document</title>
   </head>
   <body>
     Count {{ .Count}}
+    <button hx-post="/count">Increment</button>
   </body>
 </html>
 {{ end }}
